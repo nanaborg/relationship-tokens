@@ -200,6 +200,35 @@ section {
   line-height: 1.35;
 }
 
+.baselines {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 55px;
+  text-align: left;
+}
+
+.baseline {
+  border-top: 1px solid #647366;
+  padding-top: 20px;
+}
+
+.baseline h3 {
+  font-size: 27px;
+  font-weight: normal;
+  color: var(--gold);
+}
+
+.baseline p {
+  color: #c1c9be;
+  font-size: 15px;
+}
+
+@media(max-width: 700px) {
+  .baselines {
+    grid-template-columns: 1fr;
+  }
+}
 .quote strong {
   color: var(--gold);
   font-weight: normal;
@@ -283,6 +312,55 @@ footer {
 
   </div>
 </section>
+
+  
+<div class="foundation">
+  <div class="foundation-inner">
+    <div class="eyebrow">02 — The non-negotiables</div>
+    <h2>The Three Baselines.</h2>
+
+    <p>
+      Before any investment can create something meaningful,
+      three fundamental principles must be present.
+      These are not currencies. They are the standards
+      upon which every healthy relationship is built.
+    </p>
+
+    <div class="baselines">
+
+      <div class="baseline">
+        <div class="symbol">◈</div>
+        <h3>Truth</h3>
+        <p>
+          Honesty, transparency and integrity.
+          Being truthful even when the truth is uncomfortable.
+          Trust cannot exist without honesty.
+        </p>
+      </div>
+
+      <div class="baseline">
+        <div class="symbol">♡</div>
+        <h3>Respect</h3>
+        <p>
+          Recognising another person's worth, boundaries,
+          feelings, individuality and time.
+          Respect is a standard, not a reward.
+        </p>
+      </div>
+
+      <div class="baseline">
+        <div class="symbol">✧</div>
+        <h3>Communication</h3>
+        <p>
+          The willingness to express yourself, listen,
+          clarify, understand and work through
+          misunderstandings, even when it's difficult.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <section class="principle">
   <div class="eyebrow">The investment principle</div>
