@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111713">
+<title>The Currency of Relationships</title>
+
+<style>
+:root {
+  --bg: #111713;
+  --surface: #1b241e;
+  --text: #f2f0e8;
+  --muted: #a6afa5;
+  --gold: #d9b77c;
+  --green: #9eb8a0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 24px;
+  background:
+    radial-gradient(ellipse at 50% 35%, #29392d 0%, transparent 65%);
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font: 11px Arial, sans-serif;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 100px);
+  font-weight: normal;
+  line-height: 1.05;
+  max-width: 900px;
+  margin: 30px 0;
+}
+
+h1 em { color: var(--gold); }
+
+.subtitle {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.scroll {
+  margin-top: 65px;
+  color: var(--gold);
+  font: 11px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+section {
+  max-width: 1050px;
+  margin: auto;
+  padding: 100px 24px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.section-intro {
+  text-align: center;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 55px;
+}
+
+.tokens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.token {
+  background: var(--surface);
+  border: 1px solid #354238;
+  padding: 35px 28px;
+  min-height: 290px;
+  transition: .3s;
+}
+
+.token:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.number {
+  color: var(--gold);
+  font: 12px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+.symbol {
+  font-size: 38px;
+  margin: 20px 0 5px;
+  color: var(--gold);
+}
+
+.token h3 {
+  font-size: 29px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.token p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.foundation {
+  background: #202c23;
+  max-width: none;
+  text-align: center;
+  padding: 100px 24px;
+}
+
+.foundation-inner {
+  max-width: 750px;
+  margin: auto;
+}
+
+.foundation h2 {
+  font-size: clamp(45px, 7vw, 75px);
+  font-weight: normal;
+  color: var(--gold);
+  margin: 15px 0;
+}
+
+.foundation p {
+  color: #c1c9be;
+  font-size: 18px;
+}
+
+.principle {
+  text-align: center;
+}
+
+.principle h2 {
+  font-size: clamp(35px, 6vw, 58px);
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+.principle h2 em { color: var(--gold); }
+
+.exchange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 55px;
+  text-align: left;
+}
+
+.exchange > div {
+  border-top: 1px solid #566357;
+  padding-top: 20px;
+}
+
+.exchange h3 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.exchange p { color: var(--muted); }
+
+.quote {
+  text-align: center;
+  padding: 110px 24px;
+  background: #202c23;
+}
+
+.quote blockquote {
+  max-width: 850px;
+  margin: auto;
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1.35;
+}
+
+.quote strong {
+  color: var(--gold);
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 45px 20px;
+  color: #829083;
+  font: 11px Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+@media(max-width: 700px) {
+  .tokens { grid-template-columns: 1fr; }
+  .token { min-height: auto; }
+  .exchange { grid-template-columns: 1fr; }
+  section { padding: 75px 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="eyebrow">A philosophy of human connection</div>
+
+  <h1>The Currency of <em>Relationships.</em></h1>
+
+  <p class="subtitle">
+    Every relationship is an investment.
+    And every investment requires something of value.
+    There are three currencies we all spend.
+  </p>
+
+  <div class="scroll">THREE CURRENCIES · ONE FOUNDATION ↓</div>
+</header>
+
+<section>
+  <h2 class="section-title">The three tokens</h2>
+
+  <p class="section-intro">
+    We all have limited resources. How we choose to invest
+    them says a lot about the relationships we build.
+  </p>
+
+  <div class="tokens">
+
+    <article class="token">
+      <div class="number">01 — CURRENCY</div>
+      <div class="symbol">◷</div>
+      <h3>Time</h3>
+      <p>
+        Your most limited and non-refundable resource.
+        Making time, being present, showing up, initiating
+        plans and making someone a priority.
+      </p>
+    </article>
+
+    <article class="token">
+      <div class="number">02 — CURRENCY</div>
+      <div class="symbol">✧</div>
+      <h3>Energy</h3>
+      <p>
+        The emotional and mental effort you invest.
+        Listening, caring, communicating, showing affection,
+        supporting someone and resolving conflict.
+      </p>
+    </article>
+
+    <article class="token">
+      <div class="number">03 — CURRENCY</div>
+      <div class="symbol">◇</div>
+      <h3>Money</h3>
+      <p>
+        The financial resources you are willing to share.
+        Dates, gifts, experiences, helping when needed
+        and sharing life's responsibilities.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<div class="foundation">
+  <div class="foundation-inner">
+    <div class="eyebrow">The non-negotiable</div>
+    <h2>Respect.</h2>
+    <p>
+      Respect is not a fourth currency.
+      It is the foundation upon which all three currencies
+      must be exchanged.
+    </p>
+    <p>
+      It means valuing someone's time, recognising their
+      efforts, respecting their boundaries, being honest,
+      and never taking their investment for granted.
+    </p>
+    <p>
+      Respect isn't something you earn by investing enough.
+      It is the minimum standard that makes the investment
+      worthwhile.
+    </p>
+  </div>
+</div>
+
+<section class="principle">
+  <div class="eyebrow">The investment principle</div>
+
+  <h2>
+    You cannot continuously <em>withdraw</em>
+    without making deposits.
+  </h2>
+
+  <p class="section-intro">
+    Relationships aren't necessarily 50/50 every day.
+    Sometimes one person has more to give than the other.
+    Life happens. Circumstances change.
+  </p>
+
+  <div class="exchange">
+    <div>
+      <h3>Investment</h3>
+      <p>
+        Someone might have little money but give plenty
+        of time and emotional energy. Someone else might
+        have limited time but contribute in other ways.
+        The currencies don't need to be identical.
+      </p>
+    </div>
+
+    <div>
+      <h3>Reciprocity</h3>
+      <p>
+        What matters is mutual willingness.
+        Both people should want to contribute,
+        appreciate what the other brings and make
+        an effort to keep the relationship alive.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <blockquote>
+    A healthy relationship isn't about counting tokens.
+    It's about making sure you're not the only one
+    <strong>putting them into circulation.</strong>
+  </blockquote>
+</div>
+
+<section class="principle">
+  <div class="eyebrow">One last thought</div>
+  <h2>
+    You cannot expect a return on an investment
+    you're unwilling to <em>make.</em>
+  </h2>
+  <p class="section-intro">
+    Connection requires contribution.
+    Intimacy requires emotional energy.
+    Togetherness requires time.
+    Shared experiences require resources.
+    And all of it requires respect.
+  </p>
+</section>
+
+<footer>
+  THE CURRENCY OF RELATIONSHIPS · AN EXERCISE IN RECIPROCITY
+</footer>
+
+</body>
+</html>
